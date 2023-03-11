@@ -1,0 +1,48 @@
+.container {
+  max-width: 650px;
+
+  margin: auto;
+  padding: 20px 30px;
+  background-color: #fbfbfb;
+}
+body:hover .acc {
+  display: inline-block;
+}
+
+.acc,
+.close {
+  display: none;
+  width: 40px;
+  cursor: pointer;
+}
+
+h1 {
+  border-bottom: solid 1px;
+}
+
+
+.text {
+     max-width: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  padding-left: 50px;
+}
+
+.checkbox {
+  display: none;
+}
+.img {
+  display: none;
+  transition: max-height 20s linear;
+}
+
+.checkbox:hover ~ .img {
+  display: inline-block;
+}
+
+.checkbox:checked ~ .img {
+  display: inline-block;
+}
